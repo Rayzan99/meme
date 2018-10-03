@@ -33,8 +33,8 @@ in_voice=[]
 
 @bot.event
 async def on_ready():
-    await bot.change_presence(game=discord.Game(name='with Neppugear (´｡• ω •｡`) ', type=0))
-    print("hi")    
+  await client.change_presence(game=discord.Game(name='with Neppugear (´｡• ω •｡`) ', type=0))
+  print("Bot is online.")    
     
 @bot.command(pass_context=True)
 async def join(ctx):
@@ -104,4 +104,4 @@ async def vdir(con):
   await bot.say(players[251397169725046784])
   await bot.say(dir(players[251397169725046784]))
 
-bot.run(os.environ('TOKEN')
+bot.run(os.environ['BOT_TOKEN'])
