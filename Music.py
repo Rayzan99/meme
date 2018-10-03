@@ -33,7 +33,7 @@ in_voice=[]
 
 @bot.event
 async def on_ready():
-  await client.change_presence(game=discord.Game(name='with Neppugear (´｡• ω •｡`) ', type=0))
+  await bot.change_presence(game=discord.Game(name='with Neppugear (´｡• ω •｡`) ', type=0))
   print("Bot is online.")    
     
 @bot.command(pass_context=True)
